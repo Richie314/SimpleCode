@@ -610,14 +610,12 @@ namespace TictacToeHelper
             }
 
             //The database isn't complete!
-            //A report is sent to me via telegram
-            (new Thread(async () => { 
-                int _ = await AskRichie314Bot.InternalReportAsync(
-                "TicTacToe.Strategy non completa!",
-                "Json/TicTacToe",
-                $"Tabella mancante:\n" +
-                $"{String.Join("\n", AsString().Select(row => String.Join("|", row)).ToArray())}");
-            })).Start();
+            
+            
+            
+            //INSERT YOUR CODE HERE TO THROW ERROR
+            
+            
             //Check for blank cell
             for (int i = 0; i < 3; i++)
             {
